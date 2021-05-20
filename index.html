@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notícias</title>
+    
+    <!-- My CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+</head>
+<body>
+    <header class="header">
+        <h1 id="h1">Principais notícias pelo mundo</h1>
+        <h2>Escolha o país:</h2>
+        <select id="paisMenu" class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">            
+            <option value="ar">Argentina</option>
+            <option value="au">Australia</option>
+            <option value="br">Brasil</option>
+            <option value="ch">Chile</option>
+            <option value="us">Estados Unidos</option>
+            <option value="mx">México</option>
+            <option value="nz">Nova Zelândia</option>
+            <option value="gb">Reino Unido</option>
+        </select>
+
+        <h2>Escolha a categoria:</h2>
+            <select id="categoriaMenu"class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                <option value="business">Negócios</option>
+                <option value="entertainment">Entretenimento</option>
+                <option value="general">Geral</option>
+                <option value="health">Saúde</option>
+                <option value="science">Ciência</option>
+                <option value="sports">Esportes</option>
+                <option value="technology">Tecnologia</option>
+            </select>    
+
+        <button id="buscarButton" class="btn btn-danger">Buscar</button>
+
+    </header>    
+
+    <div id="newsContainerDiv" class="container">
+    </div>
+
+    <script src="./news.js"></script>
+    
+</body>
+</html>

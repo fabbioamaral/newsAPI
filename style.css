@@ -1,0 +1,65 @@
+.header{    
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    position:relative;
+}
+
+.header::before{
+    content:"";
+    background-image: url('./hayden-walker-ihiEd-_4TNY-unsplash.jpg');
+    background-position: center;
+    background-size:cover;
+    position:absolute;
+    width:100%;
+    height:100%;
+    opacity:0.25;    
+}
+
+.header h1, .header h2, .header select, .header button{
+    position:relative;
+}
+
+#h1{
+    padding-top:60px;
+}
+
+.header button{
+    margin-bottom:50px;
+}
+
+#paisMenu, #categoriaMenu{
+    width:250px;
+}
+
+#newsContainerDiv{
+    margin-top:50px;
+}
+
+#singleNew{
+    display:flex;
+    margin-bottom:20px;    
+}
+
+.imgNews{
+    width:100%;
+    height:auto;
+}
+
+.newsLink{
+    color:rgb(161, 20, 20);
+    text-decoration: none;
+    transition: all 100ms ease-in;
+}
+
+.newsLink:hover{
+    color:rgb(109, 13, 13);
+    text-decoration: underline;
+}
+
+span{
+    margin-right:10px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
